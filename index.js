@@ -13,7 +13,6 @@ client.on("ready", () => {
 
 client.on("message", async message => {
     if (message.author.bot) return;
-    if (message.content.includes(`@`)) return;
     if (message.channel.id != process.env.CH) return;
     //if (message.content === "test") return message.inlineReply(`yo`)
     if (!message.content) return;
